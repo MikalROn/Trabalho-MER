@@ -1,7 +1,6 @@
 # Trabalho-MER
 
-    Modelo entidade relacionamento deve ter no mínimo 18 entidades. O
-    tema é de livre escolha.
+Modelo entidade relacionamento deve ter no mínimo 18 entidades. O tema é de livre escolha.
 
 ##  Tópicos do documento de modelagem do banco de dados
 
