@@ -145,6 +145,22 @@
                     include("config.php");
 
                     switch (@$_REQUEST['page']){
+
+                        case 'medico-listar':
+                            include('medico-listar.php');
+                            break;
+                    
+                        case 'medico-cadastrar':
+                            include('medico-cadastrar.php');
+                            break;
+                    
+                        case 'medico-editar':
+                            include('medico-editar.php');
+                            break;
+                    
+                        case 'medico-salvar':
+                            include('medico-salvar.php');
+                            break;
                         
                           case 'paciente-listar':
                             include('paciente-listar.php');
