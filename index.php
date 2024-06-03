@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Biblioteca</title>
+    <title>Hospital</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">Biblioteca</a>
+    <a class="navbar-brand" href="">Hospital</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,25 +20,25 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categoria
+            Paciente
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=categoria-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=categoria-cadastrar">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="?page=paciente-listar">Listar</a></li>
+            <li><a class="dropdown-item" href="?page=paciente-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Livros
+            Medico
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=livro-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=livro-cadastrar">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="?page=medico-listar">Listar</a></li>
+            <li><a class="dropdown-item" href="?page=medico-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Funcionarios
+            Medicamento
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="?page=funcionario-listar">Listar</a></li>
@@ -47,23 +47,90 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Usuários
+            Exame
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="?page=usuario-listar">Listar</a></li>
             <li><a class="dropdown-item" href="?page=usuario-cadastrar">Cadastrar</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Emprestimo
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="?page=emprestimo-listar">Listar</a></li>
-            <li><a class="dropdown-item" href="?page=emprestimo-cadastrar">Cadastrar</a></li>
-          </ul>
-        </li>
+
+
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Equipamento
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=manutencao-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=manutencao-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Recepcionista
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=recepcionista-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=recepcionista-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Consulta
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=consulta-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=consulta-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Enfermeiro
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=enfermeiro-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=enfermeiro-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Internacao
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=internacao-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=internacao-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Exame
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=exame-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=exame-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Farmacia
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?page=farmacia-listar">Listar</a></li>
+    <li><a class="dropdown-item" href="?page=farmacia-cadastrar">Cadastrar</a></li>
+  </ul>
+</li>
+
       </ul>
+
+      <!-- final dos intens da home  -->
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -78,21 +145,21 @@
                     include("config.php");
 
                     switch (@$_REQUEST['page']){
-                        //Categoria
-                        case 'categoria-listar':
-                            include('categoria-listar.php');
+                        
+                          case 'paciente-listar':
+                            include('paciente-listar.php');
                             break;
-
-                        case 'categoria-cadastrar':
-                            include('categoria-cadastrar.php');
+                    
+                        case 'paciente-cadastrar':
+                            include('paciente-cadastrar.php');
                             break;
-
-                        case 'categoria-editar':
-                            include('categoria-editar.php');
+                    
+                        case 'paciente-editar':
+                            include('paciente-editar.php');
                             break;
-
-                        case 'categoria-salvar':
-                            include('categoria-salvar.php');
+                    
+                        case 'paciente-salvar':
+                            include('paciente-salvar.php');
                             break;
 
                             //Livro
