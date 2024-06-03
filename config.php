@@ -4,7 +4,7 @@
     define('USER', 'root');
     define('PASS', '');
  
-    $conn = new mysqli(HOST, USER, PASS, 'biblioteca');
+    $conn = new mysqli(HOST, USER, PASS, 'hospital');
 
     function alert(string $message): void {
         echo '<script> alert("'. $message .'")</script>';
