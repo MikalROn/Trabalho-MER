@@ -1,0 +1,1 @@
+<h1 class='m-3'> Seja bem vindo ao sistema Hospitalar! </h1>
