@@ -3,7 +3,7 @@ create DATABASE hospital;
 use hospital;
 
 CREATE TABLE Paciente (
-IDdopaciente INT PRIMARY KEY,
+IDdopaciente INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Nome VARCHAR(100),
 Datanascimento DATE,
 Telefone VARCHAR(15),
@@ -18,93 +18,93 @@ Telefone VARCHAR(15),
 Email VARCHAR(100)
 );
 CREATE TABLE Manutencao_de_Equipamento (
-IDdamanutencao INT PRIMARY KEY,
+IDdamanutencao INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadamanutencao DATE,
 Descricaoodamanutencao VARCHAR(255),
 idEquipamento_Medico INT
 );
 CREATE TABLE Recepcionista (
 
-IDrecepcionista INT PRIMARY KEY,
+IDrecepcionista INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Nomedorecepcionista VARCHAR(100),
 Turno VARCHAR(50)
 );
 CREATE TABLE Resultados_de_Exames (
-IDdoresultado INT PRIMARY KEY,
+IDdoresultado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadoresultado DATE,
 Resultado VARCHAR(255),
 idExame INT
 );
 CREATE TABLE Consulta (
-IDdaconsulta INT PRIMARY KEY,
+IDdaconsulta INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadaconsulta DATE,
 Horadaconsulta TIME,
 idPaciente INT,
 idMedico INT
 );
 CREATE TABLE Enfermeiro (
-IDdoenfermeiro INT PRIMARY KEY,
+IDdoenfermeiro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Nome VARCHAR(100),
 Telefone VARCHAR(15),
 Email VARCHAR(100)
 );
 
 CREATE TABLE Estoque_de_Medicamentos (
-IDdoestoque INT PRIMARY KEY,
+IDdoestoque INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Quantidade INT,
 Datadevalidade DATE,
 idMedicamento INT,
 idFarmacia INT
 );
 CREATE TABLE Internacao (
-IDdainternacao INT PRIMARY KEY,
+IDdainternacao INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
 Datadeentrada DATE,
 Datadesaida DATE,
 idPaciente INT,
 idQuarto INT
 );
 CREATE TABLE Enfermaria (
-IDdaenfermaria INT PRIMARY KEY,
+IDdaenfermaria INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Nomeedaenfermaria VARCHAR(100),
 Localizacao VARCHAR(255),
 idEnfermeiro INT
 );
 CREATE TABLE Quarto (
-IDdoquarto INT PRIMARY KEY,
+IDdoquarto INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Numerodoquarto INT,
 
 Tipodequarto VARCHAR(50),
 idEnfermaria INT
 );
 CREATE TABLE Prescricao (
-IDdaprescricao INT PRIMARY KEY,
+IDdaprescricao INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadaprescricao DATE,
 idPaciente INT,
 idMedico INT,
 idMedicamento INT
 );
 CREATE TABLE Fatura (
-IDdafatura INT PRIMARY KEY,
+IDdafatura INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadafatura DATE,
 Valortotal FLOAT,
 idPaciente INT
 );
 CREATE TABLE Medicamento (
-IDdomedicamento INT PRIMARY KEY,
+IDdomedicamento INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Nomedomedicamento VARCHAR(100),
 Dosagem VARCHAR(50),
 FormadeAdministracao VARCHAR(50)
 );
 CREATE TABLE Exame (
 
-IDdoexame INT PRIMARY KEY,
+IDdoexame INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Tipodeexame VARCHAR(100),
 Datadoexame DATE,
 idPaciente INT,
 idMedico INT
 );
 CREATE TABLE Pagamento (
-IDdopagamento INT PRIMARY KEY,
+IDdopagamento INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadopagamento DATE,
 Valorpago FLOAT,
 Metododepagamento VARCHAR(50),
@@ -112,13 +112,13 @@ idFatura INT,
 idRecepcionista INT
 );
 CREATE TABLE Equipamento_Medico (
-IDdoequipamento INT PRIMARY KEY,
+IDdoequipamento INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Datadeaquisicao DATE,
 Nomedoequipamento VARCHAR(100),
 Fabricante VARCHAR(100)
 );
 CREATE TABLE Farmacia (
-IDdafarmacia INT PRIMARY KEY,
+IDdafarmacia INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 Nomefarmacia VARCHAR(100),
 
 Localizacao VARCHAR(255)
